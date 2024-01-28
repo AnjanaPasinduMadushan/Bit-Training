@@ -7,13 +7,12 @@ export type ButtonProps = {
   className?: string;
 } & ButtonHTMLAttributes<HTMLButtonElement>;
 
-export const Button = ({ children, className='', ...rest }: ButtonProps) => {
-  const baseClasses = 'bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded';
+export const Button = ({ children, className='' }: ButtonProps) => {
 
-  const classes = twMerge(baseClasses, className);
+  const classes = twMerge('px-4 py-2 font-medium text-red bg-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500', className);
 
   return (
-    <button className={classes} type="button" {...rest}>
+    <button className={classes} type="button">
       {children}
     </button>
   );
