@@ -44,5 +44,12 @@
         "mainFile": "index.ts",
         "rootDir": "css_styling/stylex/input"
     },
+    "tailwind/button": {
+        "name": "tailwind/button",
+        "scope": "anjanaorg.css_styling",
+        "version": "0.0.3",
+        "mainFile": "index.ts",
+        "rootDir": "css_styling/tailwind/button"
+    },
     "$schema-version": "17.0.0"
 }
