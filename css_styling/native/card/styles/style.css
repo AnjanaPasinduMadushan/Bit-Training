@@ -1,0 +1,60 @@
+:root {
+    --card-bg-color: #9cfcff;
+    --card-border-color: #777e25;
+    --card-text-color: #003ffb;
+    --card-description-color: #fe0000;
+    --card-font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .card-container {
+    container-type: inline-size;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  @container (max-width: 450px){
+    .card-one p{
+    font-size: 20px;
+    font-weight: 200;
+  }}
+
+  .card-one {
+    background-color: var(--card-bg-color);
+    border: 5px solid;
+    border-color: var(--card-border-color);
+    padding: 16px;
+    border-radius: 8px;
+  }
+  
+  .card-title {
+    color: var(--card-text-color);
+    margin-bottom: 8px;
+    font-family: var(--card-font-family);
+  }
+  
+  .card-description {
+    color: var(--card-description-color);
+  }
+ 
+  @container (max-width: 200px) {
+    .card-container {
+      max-width: 100%;
+    }
+  
+    .card-one {
+      padding: 8px;
+    }
+  
+    .card-title {
+      font-size: 18px;
+    }
+  }
+
+  @scope (.card-container) to (.card-one) {
+    h2 {
+      font-size: 30px;
+      font-weight: 100;
+      font-style: italic;
+      color:var(--card-description-color)
+    }
+}
