@@ -1,5 +1,6 @@
 :root {
     --card-bg-color: #9cfcff;
+    --bg-color:#fd9eff;
     --card-border-color: #777e25;
     --card-text-color: #003ffb;
     --card-description-color: #fe0000;
@@ -8,17 +9,13 @@
 
   .card-container {
     container-type: inline-size;
-    max-width: 500px;
-    margin: 0 auto;
+    width:350px;
+    margin: 10px auto;
+    background-color: var(--bg-color);
+    border-radius: 8px;
   }
 
-  @container (max-width: 450px){
-    .card-one p{
-    font-size: 20px;
-    font-weight: 200;
-  }}
-
-  .card-one {
+  .card {
     background-color: var(--card-bg-color);
     border: 5px solid;
     border-color: var(--card-border-color);
@@ -36,21 +33,27 @@
     color: var(--card-description-color);
   }
  
-  @container (max-width: 200px) {
+  @container (max-width: 550px) {
     .card-container {
       max-width: 100%;
     }
   
-    .card-one {
+    .card {
       padding: 8px;
+      margin: 10px 10px;
     }
   
+    .card p{
+      font-size: 40px;
+      font-weight: 300;
+    }
+
     .card-title {
       font-size: 18px;
     }
   }
 
-  @scope (.card-container) to (.card-one) {
+  @scope (.card-container) to (.card) {
     h2 {
       font-size: 30px;
       font-weight: 100;

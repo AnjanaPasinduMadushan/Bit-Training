@@ -14,7 +14,7 @@ export function Card({ title, description }: CardProps) {
       <div className="card-container">
       <h2>Demo Heading</h2>
       <p className={styles.myParagraph}>This is just a demo</p>
-      <div className="card-one">
+      <div className="card">
         <h2 className="card-title">{title}</h2>
         <p className="card-description">{description}</p>
       </div>
