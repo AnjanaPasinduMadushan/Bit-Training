@@ -19,7 +19,7 @@
     "native/card": {
         "name": "native/card",
         "scope": "anjanaorg.css_styling",
-        "version": "0.0.27",
+        "version": "0.0.28",
         "mainFile": "index.ts",
         "rootDir": "css_styling/native/card"
     },
