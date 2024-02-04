@@ -1,7 +1,8 @@
+/* Importing variables from a separate file */
 @import './variables.css';
 
   .card-container {
-    container-type: inline-size;
+    container-type: inline-size;/*Setting the container type*/
     width:350px;
     margin: 10px auto;
     background-color: var(--bg-color);
@@ -26,6 +27,7 @@
     color: var(--card-description-color);
   }
  
+  /*Container query for the card-container based on the condition*/
   @container (max-width: 550px) {
     .card-container {
       max-width: 100%;
@@ -46,6 +48,7 @@
     }
   }
 
+  /*Scoped styling for the h2 tags from .card-container to .card*/
   @scope (.card-container) to (.card) {
     h2 {
       font-size: 30px;
