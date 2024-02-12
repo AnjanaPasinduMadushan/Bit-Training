@@ -9,12 +9,26 @@
  */
 
 {
+    "components/publisher": {
+        "name": "components/publisher",
+        "scope": "anjanaorg.signalsjs",
+        "version": "0.0.3",
+        "mainFile": "index.ts",
+        "rootDir": "signalsjs/components/publisher"
+    },
     "components/pubsub": {
         "name": "components/pubsub",
         "scope": "anjanaorg.signalsjs",
         "version": "0.0.4",
         "mainFile": "index.ts",
         "rootDir": "signalsjs/components/pubsub"
+    },
+    "components/subscriber": {
+        "name": "components/subscriber",
+        "scope": "anjanaorg.signalsjs",
+        "version": "0.0.1",
+        "mainFile": "index.ts",
+        "rootDir": "signalsjs/components/subscriber"
     },
     "envs/my-react-env": {
         "name": "envs/my-react-env",

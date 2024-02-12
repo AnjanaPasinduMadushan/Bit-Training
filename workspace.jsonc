@@ -53,6 +53,7 @@
     "packageManager": "teambit.dependencies/pnpm",
     "policy": {
       "dependencies": {
+        "@anjanaorg/signalsjs.components.pubsub": "^0.0.4",
         "@teambit/defender.eslint-linter": "^1.0.18",
         "@teambit/defender.jest-tester": "^1.0.16",
         "@teambit/defender.prettier-formatter": "^1.0.8",
